@@ -47,13 +47,22 @@ namespace properties_of_the_interface
         }
     }
 
-
-
     class Program
     {
         static void Main(string[] args)
         {
-            
+            IValue value1 = new Image();
+            IValue value2 = new Article();
+
+            value1.Count++;
+            value2.Count++;
+
+            value1.Name = "Tom";
+            value2.Name = "Jerry";
+
+            Console.WriteLine(value1.Name);
+            Console.WriteLine(value2.Name);
+            Console.ReadLine(); 
         }
     }
 }
