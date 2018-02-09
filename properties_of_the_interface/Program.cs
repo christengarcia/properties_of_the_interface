@@ -30,6 +30,23 @@ namespace properties_of_the_interface
         }
     }
 
+    class Article : IValue
+    {
+        public int Count
+        {
+            get;
+            set;
+        }
+
+        string _name;
+
+        public string Name
+        {
+            get { return this._name; }
+            set { this._name = value.ToUpper(); }
+        }
+    }
+
 
 
     class Program
